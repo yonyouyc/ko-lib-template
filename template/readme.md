@@ -1,1 +1,2 @@
-//generate by vue init yonyouyc/ko-lib-template
+generate by vue init yonyouyc/ko-lib-template
+# {{ name }}
