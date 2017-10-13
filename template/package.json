@@ -1,5 +1,4 @@
 {
-  //generate by vue init yonyouyc/ko-lib-template
   "name": "{{ name }}",
   "version": "1.0.0",
   "description":"{{ description }}",
