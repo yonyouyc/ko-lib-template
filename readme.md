@@ -8,3 +8,7 @@ see [如何安装vue-cli](https://github.com/vuejs/vue-cli)
 vue init yonyouyc/ko-lib-template <project-name>
 
 project-name 请输入自己的project-name
+
+update list
+
+1.171028 update es-lint
