@@ -4,6 +4,8 @@ var merge = require('webpack-merge')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
 var uglifyjs = require('uglifyjs-webpack-plugin')
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// 去除重复的css
+var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 // ...
 config = merge(config, {
   externals: {
@@ -47,6 +49,11 @@ config = merge(config, {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
+    new OptimizeCSSPlugin({
+      cssProcessorOptions: {
+        safe: true
+      }
+    })
     // new BundleAnalyzerPlugin()
   ]
 })
